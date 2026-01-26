@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">PlayTunes</string>
+    <string name="now_playing_activity_label">Now Playing</string>
+</resources>
