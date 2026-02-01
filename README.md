@@ -89,10 +89,6 @@ A simple and elegant Android music player application built with Java, featuring
    - Click the "Run" button or press `Shift + F10`
    - Select your target device and click "OK"
 
-5. **Take Screenshots** (Optional):
-   - Once the app is running, take screenshots for documentation
-   - Save them in the `screenshots/` folder following the naming guidelines
-   - See [screenshots/README.md](screenshots/README.md) for detailed instructions
 
 ### Building APK
 ```bash
@@ -125,7 +121,7 @@ PlayTunes-Music-Player/
 │   ├── src/androidTest/                   # Instrumented tests
 │   ├── src/test/                          # Unit tests
 │   └── build.gradle                       # App-level build configuration
-├── screenshots/                           # App screenshots and documentation
+├── screenshots/                           # App screenshots
 ├── gradle/wrapper/                        # Gradle wrapper files
 ├── .gitignore                             # Git ignore rules
 ├── README.md                              # Project documentation
@@ -229,19 +225,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📱 Screenshots
 
-### Main Screen
 <div align="center">
   <img src="screenshots/main_screen.png" alt="Main Screen - Song List" width="300"/>
-</div>
-
-### Now Playing Screen
-<div align="center">
-  <img src="screenshots/now_playing.png" alt="Now Playing Screen" width="300"/>
-</div>
-
-### UI States
-<div align="center">
-  <img src="screenshots/pause_state.png" alt="Pause State" width="300"/>
+    <img src="screenshots/now_playing.png" alt="Now Playing Screen" width="300"/>
 </div>
 
 ## 🧪 Testing

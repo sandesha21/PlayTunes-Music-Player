@@ -34,19 +34,15 @@ proguard/
 # Android Studio captures folder
 captures/
 
-# IntelliJ
+# IntelliJ IDEA
 *.iml
-.idea/workspace.xml
-.idea/tasks.xml
-.idea/gradle.xml
-.idea/assetWizardSettings.xml
-.idea/dictionaries
-.idea/libraries
-.idea/caches
-.idea/modules.xml
-.idea/navEditor.xml
-# Comment next line if keeping position of elements in Navigation Editor is relevant for you
-.idea/navEditor.xml
+.idea/
+# Uncomment the following line if you want to keep some .idea files
+# !.idea/runConfigurations/
+
+# VS Code
+.vscode/
+*.code-workspace
 
 # External native build folder generated in Android Studio 2.2 and later
 .externalNativeBuild
@@ -83,6 +79,7 @@ Thumbs.db
 *.hprof
 
 # Keystore files
+# Uncomment the following lines if you do not want to check your keystore files in.
 *.jks
 *.keystore
 
@@ -96,3 +93,20 @@ Thumbs.db
 # Backup files
 *.bak
 *.backup
+
+# Patch files
+*.orig
+*.rej
+*.patch
+
+# Screenshots folder - keep structure but ignore temporary files
+screenshots/*.tmp
+screenshots/Thumbs.db
+screenshots/.DS_Store
+
+# Keep important screenshot files
+!screenshots/README.md
+!screenshots/.gitkeep
+!screenshots/*.png
+!screenshots/*.jpg
+!screenshots/*.jpeg
