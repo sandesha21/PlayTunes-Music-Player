@@ -7,7 +7,6 @@
 ![Build](https://img.shields.io/badge/Build-Gradle-blue.svg)
 ![UI](https://img.shields.io/badge/UI-Material%20Design-purple.svg)
 ![Status](https://img.shields.io/badge/Status-Prototype-yellow.svg)
-![Version](https://img.shields.io/badge/Version-1.0-red.svg)
 
 A simple and elegant Android music player application built with Java, featuring a clean user interface and essential music playback controls. This is a UI prototype showcasing modern Android development practices with a focus on user experience design.
 
@@ -72,7 +71,7 @@ A simple and elegant Android music player application built with Java, featuring
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/sandesha21/MyMusicPlayer.git
+   git clone https://github.com/sandesha21/PlayTunes-Music-Player
    cd MyMusicPlayer
    ```
 
@@ -90,6 +89,11 @@ A simple and elegant Android music player application built with Java, featuring
    - Click the "Run" button or press `Shift + F10`
    - Select your target device and click "OK"
 
+5. **Take Screenshots** (Optional):
+   - Once the app is running, take screenshots for documentation
+   - Save them in the `screenshots/` folder following the naming guidelines
+   - See [screenshots/README.md](screenshots/README.md) for detailed instructions
+
 ### Building APK
 ```bash
 ./gradlew assembleDebug
@@ -99,44 +103,36 @@ The APK will be generated in `app/build/outputs/apk/debug/`
 ## 📂 Project Structure
 
 ```
-app/
-├── src/main/java/com/sandesh/android/playtunes/
-│   ├── MainActivity.java              # Main activity with song list and bottom controls
-│   ├── Song.java                      # Song model class with properties
-│   ├── SongAdapter.java               # Custom ArrayAdapter for ListView
-│   └── SongCurrentlyPlaying.java      # Full-screen now playing activity
-├── src/main/res/
-│   ├── drawable/                      # Album artwork and Material Design icons
-│   │   ├── *.jpg                      # Album cover images
-│   │   └── baseline_*.png             # Material Design control icons
-│   ├── drawable-*/                    # Density-specific drawable resources
-│   ├── layout/
-│   │   ├── activity_main.xml          # Main screen layout
-│   │   ├── activity_song_currently_palying.xml  # Now playing screen
-│   │   ├── song_list_item.xml         # Individual song item layout
-│   │   └── song_list.xml              # Song list container
-│   ├── mipmap-*/                      # App launcher icons
-│   └── values/                        # Strings, colors, dimensions, styles
-├── src/androidTest/                   # Instrumented tests
-├── src/test/                          # Unit tests
-└── build.gradle                       # App-level build configuration
+PlayTunes-Music-Player/
+├── app/
+│   ├── src/main/java/com/sandesh/android/playtunes/
+│   │   ├── MainActivity.java              # Main activity with song list and bottom controls
+│   │   ├── Song.java                      # Song model class with properties
+│   │   ├── SongAdapter.java               # Custom ArrayAdapter for ListView
+│   │   └── SongCurrentlyPlaying.java      # Full-screen now playing activity
+│   ├── src/main/res/
+│   │   ├── drawable/                      # Album artwork and Material Design icons
+│   │   │   ├── *.jpg                      # Album cover images
+│   │   │   └── baseline_*.png             # Material Design control icons
+│   │   ├── drawable-*/                    # Density-specific drawable resources
+│   │   ├── layout/
+│   │   │   ├── activity_main.xml          # Main screen layout
+│   │   │   ├── activity_song_currently_palying.xml  # Now playing screen
+│   │   │   ├── song_list_item.xml         # Individual song item layout
+│   │   │   └── song_list.xml              # Song list container
+│   │   ├── mipmap-*/                      # App launcher icons
+│   │   └── values/                        # Strings, colors, dimensions, styles
+│   ├── src/androidTest/                   # Instrumented tests
+│   ├── src/test/                          # Unit tests
+│   └── build.gradle                       # App-level build configuration
+├── screenshots/                           # App screenshots and documentation
+├── gradle/wrapper/                        # Gradle wrapper files
+├── .gitignore                             # Git ignore rules
+├── README.md                              # Project documentation
+├── build.gradle                           # Project-level build configuration
+├── settings.gradle                        # Gradle settings
+└── LICENSE                                # MIT License
 ```
-
-## 🎵 Sample Songs Included
-
-The app comes with a curated playlist featuring classic hits:
-
-| Song | Artist | Duration |
-|------|--------|----------|
-| "Finally Found Someone" | Bryan Adams & Barbra Streisand | 5:23 |
-| "Everything" | Michael Bublé | 3:51 |
-| "Summer of 69" | Bryan Adams | 4:13 |
-| "Close To You" | Karen Carpenter | 5:13 |
-| "Everything I Do I Do It For You!" | Bryan Adams | 5:23 |
-| "Love Was Made For Us" | Cleo | 4:35 |
-| "The Power Of Love" | Celine Dion | 2:23 |
-
-*All songs include high-quality album artwork optimized for different screen densities.*
 
 ## 🔧 Key Components
 
@@ -232,8 +228,21 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 ## 📱 Screenshots
-See the app in action with the provided screenshots in the repository.
-*Note: Actual screenshots would be included in the repository*
+
+### Main Screen
+<div align="center">
+  <img src="screenshots/main_screen.png" alt="Main Screen - Song List" width="300"/>
+</div>
+
+### Now Playing Screen
+<div align="center">
+  <img src="screenshots/now_playing.png" alt="Now Playing Screen" width="300"/>
+</div>
+
+### UI States
+<div align="center">
+  <img src="screenshots/pause_state.png" alt="Pause State" width="300"/>
+</div>
 
 ## 🧪 Testing
 
