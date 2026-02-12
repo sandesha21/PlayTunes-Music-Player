@@ -240,7 +240,6 @@ The main screen displays a list of available songs with album artwork, song titl
 
 The now playing screen shows a full-screen view with large album artwork, song details, and interactive playback controls (play/pause, previous, next).
 
-> **Note**: For guidelines on adding more screenshots, see [screenshots/README.md](screenshots/README.md)
 
 ## 🧪 Testing
 
