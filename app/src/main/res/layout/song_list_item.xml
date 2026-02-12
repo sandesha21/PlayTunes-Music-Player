@@ -10,6 +10,7 @@
         android:id="@+id/list_song_image"
         android:layout_width="@dimen/list_height"
         android:layout_height="@dimen/list_height"
+        android:paddingStart="@dimen/padding_8"
         android:src="@drawable/music" />
 
     <LinearLayout
@@ -17,7 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:paddingLeft="@dimen/padding_16">
+        android:paddingStart="@dimen/padding_16">
 
         <TextView
             android:id="@+id/list_song_name"
@@ -25,6 +26,7 @@
             android:layout_height="@dimen/list_song_name_height"
             android:layout_weight="1"
             android:gravity="bottom"
+            android:textStyle="bold"
             tools:text="Name of the song" />
 
         <TextView
@@ -33,6 +35,7 @@
             android:layout_height="@dimen/list_singer_name_height"
             android:layout_weight="1"
             android:gravity="top"
+            android:textStyle="italic"
             tools:text="Singer" />
 
     </LinearLayout>
