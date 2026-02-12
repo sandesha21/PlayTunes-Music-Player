@@ -30,7 +30,15 @@ A simple and elegant Android music player application built with Java, featuring
 - **Responsive Design**: Optimized layouts for different screen densities (hdpi, mdpi, xhdpi, xxhdpi, xxxhdpi)
 - **Bottom Control Bar**: Quick access controls on the main screen
 
-## 🛠️ Technical Stack
+## ✅ What's Working
+
+- ✅ **Song List Display**: Browse and view all songs with artwork
+- ✅ **Song Selection**: Tap any song to view details on the now playing screen
+- ✅ **Now Playing Screen**: Full-screen view with song information
+- ✅ **Play/Pause Toggle**: Visual button state changes (UI only, no audio)
+- ✅ **Duration Display**: Formatted song duration in MM:SS format
+- ✅ **Multi-Density Support**: Optimized for various screen sizes
+- ✅ **Material Design UI**: Modern, clean interface with Material Design icons
 
 - **Language**: Java 8
 - **Platform**: Android (Min SDK 17, Target SDK 34)
@@ -100,32 +108,25 @@ The APK will be generated in `app/build/outputs/apk/debug/`
 
 ```
 PlayTunes-Music-Player/
-├── app/
+├── app/                                   # Main application module
 │   ├── src/main/java/com/sandesh/android/playtunes/
-│   │   ├── MainActivity.java              # Main activity with song list and bottom controls
-│   │   ├── Song.java                      # Song model class with properties
-│   │   ├── SongAdapter.java               # Custom ArrayAdapter for ListView
-│   │   └── SongCurrentlyPlaying.java      # Full-screen now playing activity
+│   │   ├── MainActivity.java              # Main activity with song list
+│   │   ├── Song.java                      # Song model class
+│   │   ├── SongAdapter.java               # Custom ListView adapter
+│   │   └── SongCurrentlyPlaying.java      # Now playing screen
 │   ├── src/main/res/
-│   │   ├── drawable/                      # Album artwork and Material Design icons
-│   │   │   ├── *.jpg                      # Album cover images
-│   │   │   └── baseline_*.png             # Material Design control icons
-│   │   ├── drawable-*/                    # Density-specific drawable resources
-│   │   ├── layout/
-│   │   │   ├── activity_main.xml          # Main screen layout
-│   │   │   ├── activity_song_currently_palying.xml  # Now playing screen
-│   │   │   ├── song_list_item.xml         # Individual song item layout
-│   │   │   └── song_list.xml              # Song list container
-│   │   ├── mipmap-*/                      # App launcher icons
-│   │   └── values/                        # Strings, colors, dimensions, styles
+│   │   ├── drawable/                      # Images and icons
+│   │   ├── layout/                        # XML layouts
+│   │   ├── mipmap-*/                      # App icons
+│   │   └── values/                        # Strings, colors, styles
 │   ├── src/androidTest/                   # Instrumented tests
 │   ├── src/test/                          # Unit tests
-│   └── build.gradle                       # App-level build configuration
+│   └── build.gradle                       # App build config
 ├── screenshots/                           # App screenshots
-├── gradle/wrapper/                        # Gradle wrapper files
+├── gradle/                                # Gradle wrapper
 ├── .gitignore                             # Git ignore rules
 ├── README.md                              # Project documentation
-├── build.gradle                           # Project-level build configuration
+├── build.gradle                           # Project build config
 ├── settings.gradle                        # Gradle settings
 └── LICENSE                                # MIT License
 ```
@@ -225,10 +226,21 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📱 Screenshots
 
+### Main Screen - Song List
 <div align="center">
   <img src="screenshots/main_screen.png" alt="Main Screen - Song List" width="300"/>
-    <img src="screenshots/now_playing.png" alt="Now Playing Screen" width="300"/>
 </div>
+
+The main screen displays a list of available songs with album artwork, song titles, and artist names. Users can tap on any song to navigate to the now playing screen.
+
+### Now Playing Screen
+<div align="center">
+  <img src="screenshots/now_playing.png" alt="Now Playing Screen" width="300"/>
+</div>
+
+The now playing screen shows a full-screen view with large album artwork, song details, and interactive playback controls (play/pause, previous, next).
+
+> **Note**: For guidelines on adding more screenshots, see [screenshots/README.md](screenshots/README.md)
 
 ## 🧪 Testing
 

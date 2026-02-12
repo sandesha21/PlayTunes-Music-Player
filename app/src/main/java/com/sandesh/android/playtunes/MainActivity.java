@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
         songsList = new ArrayList<Song>();
         songsList.add(new Song("Finally Found Someone", "Bryan Adams and Barbra Streisand", 5*60 + 23, R.drawable.ifinallyfoundsomeone));
-        songsList.add(new Song("Everything", "Michael Buble", 3*60 + 51, R.drawable.everythingmichaelbuble));
+        songsList.add(new Song("Everything", "Michael Bublé", 3*60 + 51, R.drawable.everythingmichaelbuble));
         songsList.add(new Song("Summer of 69", "Bryan Adam", 4*60 + 13, R.drawable.summerof69bryanadams));
         songsList.add(new Song("Close To You", "Karen Carpenter", 5*60 + 13, R.drawable.closetoyoukarencarpenter));
         songsList.add(new Song("Everything I Do I Do It For You!", "Bryan Adams", 5*60 + 23, R.drawable.everythingidoidoitforyoubrayanadams));
